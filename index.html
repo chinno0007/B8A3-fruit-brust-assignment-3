@@ -10,7 +10,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <!-- <script src="https://kit.fontawesome.com/f6c59a4bb5.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -20,8 +20,8 @@
           theme: {
             extend: {
               colors: {
-                'primary': '#B68C5A',
-                'primary': '#B68C5A',
+                'primary': '#F85559',
+                
               }
             }
           }
@@ -31,19 +31,65 @@
     <!-- styles -->
     <style>
         .fonts{
-        font-family: 'EB Garamond', serif;
+            font-family: 'Roboto', sans-serif;
         }
         .banner-container{
             background-image: url('./images/banner.png');
         }
+        .no-visible{
+            display: none;
+        }
+    
+        .input-icon {
+            float: right;
+            margin-right: 6px;
+            margin-top: -25px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
     </style>
 </head>
 <body class="fonts">
     <!-- header section -->
-    <header>
+    <header class="container mx-auto">
         <!-- nav section -->
+        <nav class=" lg:bg-primary rounded-full lg:my-12 p-4 lg:text-white">
+                <div class="grid grid-cols-3 justify-between items-center">
+                  <div class="dropdown lg:hidden order-last">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  lg:hidden md:no-visible text-black order-last">
+                        <li><a>Home</a></li>  
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>                
+                    <!-- navbar-center  -->
+                    <div class=" hidden lg:flex">
+                        <ul class="menu menu-horizontal font-medium px-1 ">
+                            <li><a>Home</a></li>  
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-center ">
+                        <img class="w-auto h-auto pl-14" src="images/logo.png" alt="">
+                        <a class="btn btn-ghost normal-case text-xl lg:font-extrabold">Fruit Burst</a>
+                    </div>
+                    <div class="text-end my-auto mx-5 invisible lg:visible">
+                        <label class="relative ">
+                            <input class="p-2 bg-white w-full border border-slate-300 rounded-2xl shadow-sm focus:outline-none sm:text-sm inline-block " placeholder="Search Here..." type="text" name="search"/> 
+                            <i class="fa-solid fa-magnifying-glass inset-y-0 left-0 mr-5 input-icon text-black"></i>                           
+                        </label>
+                    </div>
+                </div>                
+        </nav>
         
-
     </header>
 
     <main>
