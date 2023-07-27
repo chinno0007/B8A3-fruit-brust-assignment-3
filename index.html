@@ -172,9 +172,251 @@
     </header>
 
     <!-- main Start -->
-    <main>
+    <main class="container mx-auto">
+        <!-- Deal of The Day -->
+        <!-- sm:flex-col -->
+        <section>
+            <div  class="lg:flex justify-around items-center mb-20 p-5">
+                <div class="flex-1 space-y-5 ">
+                    <h1 class="font-bold m-0 text-7xl ">Deal of the day</h1>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- Time -->
+                <div class="content-center mt-5">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
+                        <div class="flex flex-col ">
+                          <span class="countdown font-mono text-5xl ">
+                            <span style="--value:15;"></span>:                  
+                          </span>
+                          days
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>:
+                          </span>
+                          hours
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>:
+                          </span>
+                          min
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:58;"></span>
+                          </span>
+                          sec
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <!-- cards with details btn -->
+            <div class="grid lg:grid-cols-4 gap-10">
+                <!-- card 1 -->
+                <div class="card bg-base-100 shadow-xl border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2">
+                      <h2 class="card-title">12.90$ - 18.85$</h2> 
+                      <p>Apples</p>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="card-actions">   
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal">
+                        <form method="dialog" class="modal-box">
+
+                            
+                                <figure class="px-10 pt-10">
+                                  <img src="images/fruit6.png" alt="Apple" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center space-y-2">
+                                    <h2 class="card-title">12.90$ - 18.85$</h2> 
+                                    <p>Apples</p>
+                                    <div>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                  <div class="modal-action space-x-10">
+                                    <button class="btn text-primary">Close</button>
+                                    <button class="btn btn-primary">Buy Now</button>
+
+                                  </div>
+                               
+                              </div>
 
 
+                            </div>
+                        </form>
+                        </dialog>
+                      </div>
+                    </div>
+                <!-- card 2 -->
+                <div class="card bg-base-100 shadow-xl border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2">
+                      <h2 class="card-title">12.90$ - 18.85$</h2> 
+                      <p>Orange</p>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="card-actions">   
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_2" class="modal">
+                        <form method="dialog" class="modal-box">
+
+                            
+                                <figure class="px-10 pt-10">
+                                  <img src="images/fruit7.png" alt="Orange" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center space-y-2">
+                                    <h2 class="card-title">12.90$ - 18.85$</h2> 
+                                    <p>Orange</p>
+                                    <div>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                  <div class="modal-action space-x-10">
+                                    <button class="btn text-primary">Close</button>
+                                    <button class="btn btn-primary">Buy Now</button>
+
+                                  </div>
+                               
+                              </div>
+
+
+                            </div>
+                        </form>
+                        </dialog>
+                      </div>
+                    </div>
+                <!-- card 3 -->
+                <div class="card bg-base-100 shadow-xl border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2">
+                      <h2 class="card-title">12.90$ - 18.85$</h2> 
+                      <p>Red Dragon</p>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="card-actions">   
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_3" class="modal">
+                        <form method="dialog" class="modal-box">
+
+                            
+                                <figure class="px-10 pt-10">
+                                  <img src="images/fruit8.png" alt="Red Dragon" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center space-y-2">
+                                    <h2 class="card-title">12.90$ - 18.85$</h2> 
+                                    <p>Red Dragon</p>
+                                    <div>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                  <div class="modal-action space-x-10">
+                                    <button class="btn text-primary">Close</button>
+                                    <button class="btn btn-primary">Buy Now</button>
+
+                                  </div>
+                               
+                              </div>
+
+
+                            </div>
+                        </form>
+                        </dialog>
+                      </div>
+                    </div>
+                <!-- card 4 -->
+                <div class="card bg-base-100 shadow-xl border">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2">
+                      <h2 class="card-title">12.90$ - 18.85$</h2> 
+                      <p>Banana</p>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="card-actions">   
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal">
+                        <form method="dialog" class="modal-box">
+
+                            
+                                <figure class="px-10 pt-10">
+                                  <img src="images/fruit9.png" alt="Banana" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center space-y-2">
+                                    <h2 class="card-title">12.90$ - 18.85$</h2> 
+                                    <p>Banana</p>
+                                    <div>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                  <div class="modal-action space-x-10">
+                                    <button class="btn text-primary">Close</button>
+                                    <button class="btn btn-primary">Buy Now</button>
+
+                                  </div>
+                               
+                              </div>
+
+
+                            </div>
+                        </form>
+                        </dialog>
+                      </div>
+                    </div>
+            </div>
+            <div class="flex justify-center py-10 items-center">
+                <button class="rounded-md bg-primary px-5 py-3 ">Shop All</button>
+            </div>
+        </section>
+        <!-- Team Section -->
+        
     </main>
 
 
